@@ -1,0 +1,2121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>KELVIN SUPER Motors | Cars For Sale in Kenya</title>
+
+<meta name="description"
+<!-- content="KELVIN SUPER MOTORS - Quality new and used cars for sale in Kenya. Browse Toyota, Mercedes, BMW, Nissan, Mazda, Subaru,Harrier,MarkX and more."> -->
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:Arial,Helvetica,sans-serif;
+    background:#f5f6f8;
+    color:#172033;
+}
+
+a{
+    text-decoration:none;
+    color:inherit;
+}
+
+button,
+input,
+select,
+textarea{
+    font-family:inherit;
+}
+
+img{
+    width:100%;
+    display:block;
+}
+
+.container{
+    width:92%;
+    max-width:1250px;
+    margin:auto;
+}
+
+/* ================= HEADER ================= */
+
+header{
+    background:#07111f;
+    color:white;
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+.topbar{
+    background:#e63946;
+    padding:8px 4%;
+    display:flex;
+    justify-content:space-between;
+    font-size:14px;
+}
+
+.navbar{
+    min-height:75px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+
+.logo{
+    font-size:25px;
+    font-weight:900;
+}
+
+.logo span{
+    color:#e63946;
+}
+
+.nav-links{
+    display:flex;
+    list-style:none;
+    gap:25px;
+    align-items:center;
+}
+
+.nav-links a{
+    font-weight:bold;
+    transition:.3s;
+}
+
+.nav-links a:hover{
+    color:#e63946;
+}
+
+.nav-cta{
+    background:#e63946;
+    padding:12px 18px;
+    border-radius:6px;
+}
+
+.menu{
+    display:none;
+    background:none;
+    border:0;
+    color:white;
+    font-size:30px;
+    cursor:pointer;
+}
+
+/* ================= HERO ================= */
+
+.hero{
+    min-height:600px;
+    display:flex;
+    align-items:center;
+    color:white;
+    background:
+    linear-gradient(rgba(0,0,0,.62),rgba(0,0,0,.75)),
+    url("https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=2000&q=85")
+    center/cover;
+}
+
+.hero-content{
+    max-width:800px;
+    padding:80px 0;
+}
+
+.hero h1{
+    font-size:clamp(45px,7vw,75px);
+    line-height:1;
+    margin-bottom:22px;
+}
+
+.hero h1 span{
+    color:#e63946;
+}
+
+.hero p{
+    font-size:19px;
+    color:#e4e7eb;
+    max-width:650px;
+    margin-bottom:30px;
+}
+
+.buttons{
+    display:flex;
+    gap:12px;
+    flex-wrap:wrap;
+}
+
+.btn{
+    display:inline-block;
+    border:none;
+    cursor:pointer;
+    padding:14px 23px;
+    border-radius:7px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.btn-red{
+    background:#e63946;
+    color:white;
+}
+
+.btn-red:hover{
+    background:#c92d39;
+    transform:translateY(-2px);
+}
+
+.btn-dark{
+    background:#07111f;
+    color:white;
+}
+
+.btn-white{
+    border:2px solid white;
+    color:white;
+    background:transparent;
+}
+
+/* ================= SEARCH ================= */
+
+.search-container{
+    margin-top:-55px;
+    position:relative;
+    z-index:5;
+}
+
+.search-box{
+    background:white;
+    padding:25px;
+    border-radius:12px;
+    box-shadow:0 15px 40px rgba(0,0,0,.15);
+}
+
+.search-box h2{
+    margin-bottom:18px;
+}
+
+.search-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:12px;
+}
+
+.search-grid input,
+.search-grid select{
+    width:100%;
+    padding:13px;
+    border:1px solid #d5d9df;
+    border-radius:6px;
+    outline:none;
+}
+
+/* ================= SECTIONS ================= */
+
+section{
+    padding:80px 0;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:45px;
+}
+
+.section-title small{
+    color:#e63946;
+    text-transform:uppercase;
+    font-weight:bold;
+    letter-spacing:2px;
+}
+
+.section-title h2{
+    font-size:42px;
+    margin:8px 0;
+}
+
+.section-title p{
+    color:#697386;
+}
+
+/* ================= STATS ================= */
+
+.stats{
+    background:#07111f;
+    color:white;
+    padding:45px 0;
+}
+
+.stats-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    text-align:center;
+    gap:20px;
+}
+
+.stat h2{
+    color:#e63946;
+    font-size:36px;
+}
+
+.stat p{
+    color:#b8c0cc;
+}
+
+/* ================= INVENTORY ================= */
+
+.inventory-tools{
+    display:flex;
+    justify-content:space-between;
+    gap:15px;
+    align-items:center;
+    margin-bottom:25px;
+}
+
+.inventory-tools select{
+    padding:11px 15px;
+    border:1px solid #ddd;
+    border-radius:6px;
+}
+
+.cars{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:25px;
+}
+
+.car{
+    background:white;
+    border-radius:12px;
+    overflow:hidden;
+    box-shadow:0 5px 20px rgba(0,0,0,.07);
+    transition:.3s;
+}
+
+.car:hover{
+    transform:translateY(-5px);
+    box-shadow:0 15px 35px rgba(0,0,0,.12);
+}
+
+.car-image{
+    height:220px;
+    position:relative;
+    overflow:hidden;
+}
+
+.car-image img{
+    height:100%;
+    object-fit:cover;
+    transition:.4s;
+}
+
+.car:hover .car-image img{
+    transform:scale(1.05);
+}
+
+.badge{
+    position:absolute;
+    top:15px;
+    left:15px;
+    background:#e63946;
+    color:white;
+    padding:6px 10px;
+    border-radius:5px;
+    font-size:12px;
+    font-weight:bold;
+}
+
+.car-content{
+    padding:20px;
+}
+
+.car-content h3{
+    font-size:21px;
+}
+
+.trim{
+    color:#6c7685;
+    font-size:14px;
+}
+
+.price{
+    color:#e63946;
+    font-size:24px;
+    font-weight:900;
+    margin:12px 0;
+}
+
+.specs{
+    border-top:1px solid #eee;
+    border-bottom:1px solid #eee;
+    padding:13px 0;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:9px;
+    color:#667085;
+    font-size:13px;
+    margin-bottom:15px;
+}
+
+.car-buttons{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:8px;
+}
+
+/* ================= BODY TYPES ================= */
+
+.body-section{
+    background:white;
+}
+
+.body-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:20px;
+}
+
+.body-card{
+    height:210px;
+    border-radius:12px;
+    overflow:hidden;
+    position:relative;
+    color:white;
+}
+
+.body-card img{
+    height:100%;
+    object-fit:cover;
+}
+
+.body-card::after{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:linear-gradient(transparent,rgba(0,0,0,.8));
+}
+
+.body-text{
+    position:absolute;
+    bottom:18px;
+    left:18px;
+    z-index:2;
+}
+
+.body-text h3{
+    font-size:23px;
+}
+
+/* ================= WHY US ================= */
+
+.why-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:20px;
+}
+
+.why{
+    background:white;
+    padding:30px 20px;
+    border-radius:10px;
+    text-align:center;
+}
+
+.icon{
+    width:60px;
+    height:60px;
+    border-radius:50%;
+    background:#fff0f1;
+    color:#e63946;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin:auto auto 15px;
+    font-size:25px;
+}
+
+.why p{
+    color:#6b7280;
+    margin-top:8px;
+    font-size:14px;
+}
+
+/* ================= FINANCE ================= */
+
+.finance{
+    background:#07111f;
+    color:white;
+}
+
+.finance-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:50px;
+    align-items:center;
+}
+
+.finance h2{
+    font-size:44px;
+    margin:10px 0 20px;
+}
+
+.finance p{
+    color:#b8c1ce;
+    margin-bottom:25px;
+}
+
+.calculator{
+    background:white;
+    color:#172033;
+    padding:30px;
+    border-radius:12px;
+}
+
+.form-group{
+    margin-bottom:15px;
+}
+
+.form-group label{
+    display:block;
+    font-weight:bold;
+    font-size:13px;
+    margin-bottom:6px;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select{
+    width:100%;
+    padding:12px;
+    border:1px solid #d7dbe0;
+    border-radius:6px;
+    outline:none;
+}
+
+.payment{
+    text-align:center;
+    background:#f5f6f8;
+    padding:18px;
+    border-radius:8px;
+    margin-top:15px;
+}
+
+.payment small{
+    color:#697386;
+}
+
+.payment strong{
+    display:block;
+    color:#e63946;
+    font-size:30px;
+}
+
+/* ================= ABOUT ================= */
+
+.about{
+    background:white;
+}
+
+.about-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:50px;
+    align-items:center;
+}
+
+.about-image{
+    height:430px;
+    border-radius:12px;
+    overflow:hidden;
+}
+
+.about-image img{
+    height:100%;
+    object-fit:cover;
+}
+
+.about h2{
+    font-size:42px;
+    margin:8px 0 20px;
+}
+
+.about p{
+    color:#697386;
+    margin-bottom:15px;
+}
+
+.checks{
+    list-style:none;
+    margin:20px 0;
+}
+
+.checks li{
+    margin:10px 0;
+    font-weight:bold;
+}
+
+.checks li::before{
+    content:"✓";
+    color:#e63946;
+    margin-right:10px;
+}
+
+/* ================= CONTACT ================= */
+
+.contact{
+    background:white;
+}
+
+.contact-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:40px;
+}
+
+.contact-info{
+    background:#07111f;
+    color:white;
+    padding:35px;
+    border-radius:12px;
+}
+
+.contact-info h2{
+    font-size:32px;
+    margin-bottom:20px;
+}
+
+.contact-item{
+    display:flex;
+    gap:15px;
+    margin:22px 0;
+}
+
+.contact-icon{
+    width:42px;
+    height:42px;
+    flex-shrink:0;
+    background:#e63946;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.contact-item p{
+    color:#c4ccd7;
+    margin-top:3px;
+}
+
+.contact-form{
+    padding:10px;
+}
+
+.contact-form h2{
+    font-size:32px;
+    margin-bottom:20px;
+}
+
+.two{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:15px;
+}
+
+/* ================= FOOTER ================= */
+
+footer{
+    background:#030811;
+    color:white;
+    padding:60px 0 20px;
+}
+
+.footer-grid{
+    display:grid;
+    grid-template-columns:2fr 1fr 1fr 1fr;
+    gap:35px;
+}
+
+.footer-logo{
+    font-size:25px;
+    font-weight:900;
+    margin-bottom:15px;
+}
+
+.footer-logo span{
+    color:#e63946;
+}
+
+.footer-column p,
+.footer-column li{
+    color:#8e99a8;
+    font-size:14px;
+}
+
+.footer-column h4{
+    margin-bottom:15px;
+}
+
+.footer-column ul{
+    list-style:none;
+}
+
+.footer-column li{
+    margin:10px 0;
+}
+
+.copyright{
+    border-top:1px solid #1d2632;
+    text-align:center;
+    margin-top:40px;
+    padding-top:20px;
+    color:#6e7886;
+    font-size:13px;
+}
+
+/* ================= WHATSAPP ================= */
+
+.whatsapp{
+    position:fixed;
+    right:22px;
+    bottom:22px;
+    width:60px;
+    height:60px;
+    border-radius:50%;
+    background:#25d366;
+    color:white;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:28px;
+    z-index:999;
+    box-shadow:0 5px 20px rgba(0,0,0,.3);
+}
+
+/* ================= MODAL ================= */
+
+.modal{
+    display:none;
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,.75);
+    z-index:2000;
+    padding:20px;
+    overflow:auto;
+}
+
+.modal.show{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.modal-box{
+    width:100%;
+    max-width:850px;
+    background:white;
+    border-radius:12px;
+    overflow:hidden;
+    position:relative;
+}
+
+.close{
+    position:absolute;
+    right:15px;
+    top:15px;
+    width:40px;
+    height:40px;
+    border:none;
+    border-radius:50%;
+    background:white;
+    font-size:25px;
+    cursor:pointer;
+    z-index:2;
+}
+
+.modal-photo{
+    height:350px;
+}
+
+.modal-photo img{
+    height:100%;
+    object-fit:cover;
+}
+
+.modal-content{
+    padding:30px;
+}
+
+.modal-content h2{
+    font-size:30px;
+}
+
+.modal-price{
+    color:#e63946;
+    font-size:30px;
+    font-weight:900;
+    margin:10px 0;
+}
+
+.modal-specs{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:12px;
+    margin:20px 0;
+}
+
+.modal-spec{
+    background:#f5f6f8;
+    padding:13px;
+    border-radius:6px;
+}
+
+.modal-spec small{
+    display:block;
+    color:#697386;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media(max-width:1000px){
+
+    .cars{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .search-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .body-grid,
+    .why-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .stats-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .footer-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+}
+
+@media(max-width:750px){
+
+    .topbar{
+        justify-content:center;
+        text-align:center;
+    }
+
+    .topbar .hours{
+        display:none;
+    }
+
+    .menu{
+        display:block;
+    }
+
+    .nav-links{
+        display:none;
+        position:absolute;
+        left:0;
+        right:0;
+        top:100%;
+        background:#07111f;
+        flex-direction:column;
+        padding:25px;
+    }
+
+    .nav-links.show{
+        display:flex;
+    }
+
+    .hero{
+        min-height:550px;
+    }
+
+    .search-grid,
+    .cars,
+    .body-grid,
+    .why-grid,
+    .finance-grid,
+    .about-grid,
+    .contact-grid{
+        grid-template-columns:1fr;
+    }
+
+    .stats-grid{
+        grid-template-columns:1fr 1fr;
+    }
+
+    .footer-grid{
+        grid-template-columns:1fr;
+    }
+
+    .two{
+        grid-template-columns:1fr;
+    }
+
+    .modal-specs{
+        grid-template-columns:1fr 1fr;
+    }
+
+    .hero h1{
+        font-size:45px;
+    }
+}
+
+@media(max-width:450px){
+
+    .stats-grid{
+        grid-template-columns:1fr;
+    }
+
+    .modal-specs{
+        grid-template-columns:1fr;
+    }
+
+    .hero h1{
+        font-size:38px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- ================= HEADER ================= -->
+
+<header>
+
+<div class="topbar">
+    <div>
+        📞 <a href="tel:+254704020005">+254704020005</a>
+        &nbsp; | &nbsp;
+        ✉️ info@kekvinmutisya2004@gmail.co.ke
+    </div>
+
+    <div class="hours">
+        Mon - Sat: 8:00 AM - 6:00 PM
+    </div>
+</div>
+
+<div class="navbar container">
+
+<a href="#home" class="logo">
+    PRIME<span>DRIVE</span> MOTORS
+</a>
+
+<button class="menu" onclick="toggleMenu()">☰</button>
+
+<ul class="nav-links" id="navLinks">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#inventory">Cars For Sale</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#finance">Financing</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a class="nav-cta" href="#inventory">View Cars</a></li>
+</ul>
+
+</div>
+</header>
+
+
+<!-- ================= HERO ================= -->
+
+<section class="hero" id="home">
+
+<div class="container">
+
+<div class="hero-content">
+
+<h1>
+Find Your
+<span>Dream Car.</span>
+</h1>
+
+<p>
+Quality new and used vehicles at competitive prices.
+Browse our available cars and contact our sales team today.
+</p>
+
+<div class="buttons">
+
+<a href="#inventory" class="btn btn-red">
+Browse Cars
+</a>
+
+<a href="#contact" class="btn btn-white">
+Contact Dealer
+</a>
+
+</div>
+
+</div>
+
+</div>
+</section>
+
+
+<!-- ================= SEARCH ================= -->
+
+<div class="container search-container">
+
+<div class="search-box">
+
+<h2>🔎 Find Your Vehicle</h2>
+
+<div class="search-grid">
+
+<select id="condition">
+<option value="">New & Used</option>
+<option value="Used">Used</option>
+<option value="New">New</option>
+</select>
+
+<input
+type="text"
+id="make"
+placeholder="Make e.g. Toyota">
+
+<input
+type="number"
+id="price"
+placeholder="Maximum price">
+
+<select id="body">
+<option value="">All Body Types</option>
+<option value="SUV">SUV</option>
+<option value="Sedan">Sedan</option>
+<option value="Pickup">Pickup</option>
+<option value="Hatchback">Hatchback</option>
+<option value="Van">Van</option>
+</select>
+
+<button class="btn btn-red" onclick="searchCars()">
+Search
+</button>
+
+</div>
+
+</div>
+</div>
+
+
+<!-- ================= STATS ================= -->
+
+<div class="stats">
+
+<div class="container stats-grid">
+
+<div class="stat">
+<h2>150+</h2>
+<p>Cars Available</p>
+</div>
+
+<div class="stat">
+<h2>12+</h2>
+<p>Years Experience</p>
+</div>
+
+<div class="stat">
+<h2>3,500+</h2>
+<p>Happy Customers</p>
+</div>
+
+<div class="stat">
+<h2>98%</h2>
+<p>Customer Satisfaction</p>
+</div>
+
+</div>
+</div>
+
+
+<!-- ================= INVENTORY ================= -->
+
+<section id="inventory">
+
+<div class="container">
+
+<div class="section-title">
+
+<small>Our Inventory</small>
+
+<h2>Cars For Sale</h2>
+
+<p>
+Browse our latest available vehicles.
+</p>
+
+</div>
+
+<div class="inventory-tools">
+
+<strong id="count">
+8 Vehicles Found
+</strong>
+
+<select id="sort" onchange="sortCars()">
+<option value="recommended">Recommended</option>
+<option value="low">Price: Low to High</option>
+<option value="high">Price: High to Low</option>
+<option value="year">Newest First</option>
+</select>
+
+</div>
+
+<div class="cars" id="cars"></div>
+
+</div>
+</section>
+
+
+<!-- ================= BODY TYPES ================= -->
+
+<section class="body-section">
+
+<div class="container">
+
+<div class="section-title">
+<small>Browse Cars</small>
+<h2>Choose Your Body Type</h2>
+</div>
+
+<div class="body-grid">
+
+<a href="#inventory" class="body-card">
+<img src="https://images.unsplash.com/photo-1551830820-330a71b99659?auto=format&fit=crop&w=900&q=80">
+<div class="body-text">
+<h3>SUV</h3>
+<p>Family & Adventure</p>
+</div>
+</a>
+
+<a href="#inventory" class="body-card">
+<img src="https://images.unsplash.com/photo-1494976388531-d1058494cdd8?auto=format&fit=crop&w=900&q=80">
+<div class="body-text">
+<h3>Sedan</h3>
+<p>Luxury & Comfort</p>
+</div>
+</a>
+
+<a href="#inventory" class="body-card">
+<img src="https://images.unsplash.com/photo-1592838064575-70ed626d3a0e?auto=format&fit=crop&w=900&q=80">
+<div class="body-text">
+<h3>Pickup</h3>
+<p>Power & Utility</p>
+</div>
+</a>
+
+<a href="#inventory" class="body-card">
+<img src="https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?auto=format&fit=crop&w=900&q=80">
+<div class="body-text">
+<h3>Hatchback</h3>
+<p>Economical & Compact</p>
+</div>
+</a>
+
+</div>
+</div>
+</section>
+
+
+<!-- ================= WHY US ================= -->
+
+<section>
+
+<div class="container">
+
+<div class="section-title">
+<small>PrimeDrive Motors</small>
+<h2>Why Buy From Us?</h2>
+</div>
+
+<div class="why-grid">
+
+<div class="why">
+<div class="icon">✓</div>
+<h3>Quality Vehicles</h3>
+<p>Our vehicles are carefully inspected before sale.</p>
+</div>
+
+<div class="why">
+<div class="icon">KSh</div>
+<h3>Fair Prices</h3>
+<p>Competitive and transparent vehicle pricing.</p>
+</div>
+
+<div class="why">
+<div class="icon">🤝</div>
+<h3>Trusted Dealer</h3>
+<p>Professional service and customer support.</p>
+</div>
+
+<div class="why">
+<div class="icon">🚗</div>
+<h3>Easy Financing</h3>
+<p>Flexible financing options for qualified buyers.</p>
+</div>
+
+</div>
+</div>
+</section>
+
+
+<!-- ================= FINANCE ================= -->
+
+<section class="finance" id="finance">
+
+<div class="container finance-grid">
+
+<div>
+
+<small style="color:#e63946;font-weight:bold;">
+CAR FINANCING
+</small>
+
+<h2>
+Drive Today.<br>
+Pay Your Way.
+</h2>
+
+<p>
+Calculate an estimated monthly payment for your next vehicle.
+Contact our team for actual financing terms and approval.
+</p>
+
+<a href="#contact" class="btn btn-red">
+Apply For Financing
+</a>
+
+</div>
+
+
+<div class="calculator">
+
+<h2>Finance Calculator</h2>
+
+<div class="form-group">
+<label>Vehicle Price (KSh)</label>
+<input
+type="number"
+id="vehiclePrice"
+value="3500000"
+oninput="calculatePayment()">
+</div>
+
+<div class="form-group">
+<label>Down Payment (KSh)</label>
+<input
+type="number"
+id="downPayment"
+value="500000"
+oninput="calculatePayment()">
+</div>
+
+<div class="form-group">
+<label>Interest Rate (%)</label>
+<input
+type="number"
+id="interest"
+value="12"
+step=".1"
+oninput="calculatePayment()">
+</div>
+
+<div class="form-group">
+<label>Loan Term</label>
+
+<select id="term" onchange="calculatePayment()">
+<option value="12">12 Months</option>
+<option value="24">24 Months</option>
+<option value="36" selected>36 Months</option>
+<option value="48">48 Months</option>
+<option value="60">60 Months</option>
+</select>
+
+</div>
+
+<div class="payment">
+<small>Estimated Monthly Payment</small>
+<strong id="payment">
+KSh 0
+</strong>
+</div>
+
+</div>
+</div>
+</section>
+
+
+<!-- ================= ABOUT ================= -->
+
+<section class="about" id="about">
+
+<div class="container about-grid">
+
+<div class="about-image">
+
+<img
+src="https://images.unsplash.com/photo-1560179707-f14e90ef3623?auto=format&fit=crop&w=1200&q=85"
+alt="Car dealership">
+
+</div>
+
+<div>
+
+<small style="color:#e63946;font-weight:bold;">
+ABOUT US
+</small>
+
+<h2>Your Trusted Car Dealer</h2>
+
+<p>
+PrimeDrive Motors is a professional vehicle dealership
+providing quality cars to customers across Kenya.
+</p>
+
+<p>
+We specialize in carefully selected used and new vehicles,
+competitive pricing and professional customer service.
+</p>
+
+<ul class="checks">
+<li>Quality inspected vehicles</li>
+<li>Transparent prices</li>
+<li>Flexible financing</li>
+<li>Trade-in options</li>
+<li>Professional customer support</li>
+</ul>
+
+<a href="#contact" class="btn btn-red">
+Talk To Our Team
+</a>
+
+</div>
+
+</div>
+</section>
+
+
+<!-- ================= CONTACT ================= -->
+
+<section class="contact" id="contact">
+
+<div class="container">
+
+<div class="section-title">
+<small>Get In Touch</small>
+<h2>Contact Our Dealership</h2>
+<p>Interested in a vehicle? Call or WhatsApp our sales team.</p>
+</div>
+
+<div class="contact-grid">
+
+
+<div class="contact-info">
+
+<h2>PrimeDrive Motors</h2>
+
+<div class="contact-item">
+
+<div class="contact-icon">📍</div>
+
+<div>
+<strong>Our Yard</strong>
+<p>Mombasa Road, Nairobi, Kenya</p>
+</div>
+
+</div>
+
+
+<div class="contact-item">
+
+<div class="contact-icon">📞</div>
+
+<div>
+<strong>Phone</strong>
+<p>
+<a href="tel:+254704020005">
++254704020005
+</a>
+</p>
+</div>
+
+</div>
+
+
+<div class="contact-item">
+
+<div class="contact-icon">💬</div>
+
+<div>
+<strong>WhatsApp</strong>
+<p>
+<a
+href="https://wa.me/254704020005"
+target="_blank">
++254704020005
+</a>
+</p>
+</div>
+
+</div>
+
+
+<div class="contact-item">
+
+<div class="contact-icon">✉️</div>
+
+<div>
+<strong>Email</strong>
+<p>
+info@kelvinmutisya2004@gmail.com
+</p>
+</div>
+
+</div>
+
+
+<div class="contact-item">
+
+<div class="contact-icon">🕐</div>
+
+<div>
+<strong>Opening Hours</strong>
+<p>
+Monday - Saturday<br>
+8:00 AM - 6:00 PM
+</p>
+</div>
+
+</div>
+
+</div>
+
+
+<div class="contact-form">
+
+<h2>Send An Enquiry</h2>
+
+<form onsubmit="sendWhatsApp(event)">
+
+<div class="two">
+
+<div class="form-group">
+<label>Name</label>
+<input id="name" required placeholder="Your name">
+</div>
+
+<div class="form-group">
+<label>Phone</label>
+<input id="phone" required placeholder="+254...">
+</div>
+
+</div>
+
+<div class="form-group">
+<label>Email</label>
+<input type="email" id="email" placeholder="you@email.com">
+</div>
+
+<div class="form-group">
+<label>Vehicle Interested In</label>
+<input id="vehicle" placeholder="e.g. 2023 Toyota Harrier">
+</div>
+
+<div class="form-group">
+<label>Message</label>
+<textarea id="message" rows="5"
+placeholder="I am interested in this vehicle..."></textarea>
+</div>
+
+<button class="btn btn-red">
+Send Enquiry On WhatsApp
+</button>
+
+</form>
+
+</div>
+
+</div>
+</div>
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+<div class="container footer-grid">
+
+<div class="footer-column">
+
+<div class="footer-logo">
+PRIME<span>DRIVE</span> MOTORS
+</div>
+
+<p>
+Quality vehicles. Fair prices.
+Professional service.
+</p>
+
+<br>
+
+<p>📞 +254704020005</p>
+<p>✉️ info@kekvinmutisya2004@gmail.com</p>
+
+</div>
+
+
+<div class="footer-column">
+
+<h4>Inventory</h4>
+
+<ul>
+<li><a href="#inventory">All Cars</a></li>
+<li><a href="#inventory">SUVs</a></li>
+<li><a href="#inventory">Sedans</a></li>
+<li><a href="#inventory">Pickups</a></li>
+</ul>
+
+</div>
+
+
+<div class="footer-column">
+
+<h4>Services</h4>
+
+<ul>
+<li><a href="#finance">Financing</a></li>
+<li><a href="#contact">Trade-In</a></li>
+<li><a href="#contact">Test Drive</a></li>
+<li><a href="#contact">Vehicle Enquiry</a></li>
+</ul>
+
+</div>
+
+
+<div class="footer-column">
+
+<h4>Company</h4>
+
+<ul>
+<li><a href="#about">About Us</a></li>
+<li><a href="#contact">Contact</a></li>
+<li>Privacy Policy</li>
+<li>Terms & Conditions</li>
+</ul>
+
+</div>
+
+</div>
+
+
+<div class="container copyright">
+
+© 2026 PrimeDrive Motors. All Rights Reserved.
+
+</div>
+
+</footer>
+
+
+<!-- ================= WHATSAPP BUTTON ================= -->
+
+<a
+class="whatsapp"
+href="https://wa.me/254712345678?text=Hello%20PrimeDrive%20Motors,%20I%20am%20interested%20in%20your%20cars."
+target="_blank"
+title="WhatsApp Dealer">
+💬
+</a>
+
+
+<!-- ================= VEHICLE MODAL ================= -->
+
+<div class="modal" id="modal">
+
+<div class="modal-box">
+
+<button class="close" onclick="closeModal()">×</button>
+
+<div class="modal-photo">
+<img id="modalImage" src="" alt="">
+</div>
+
+<div class="modal-content">
+
+<h2 id="modalTitle"></h2>
+
+<div class="modal-price" id="modalPrice"></div>
+
+<p id="modalDescription"></p>
+
+<div class="modal-specs">
+
+<div class="modal-spec">
+<small>Year</small>
+<strong id="mYear"></strong>
+</div>
+
+<div class="modal-spec">
+<small>Mileage</small>
+<strong id="mMileage"></strong>
+</div>
+
+<div class="modal-spec">
+<small>Transmission</small>
+<strong id="mTransmission"></strong>
+</div>
+
+<div class="modal-spec">
+<small>Fuel</small>
+<strong id="mFuel"></strong>
+</div>
+
+<div class="modal-spec">
+<small>Body</small>
+<strong id="mBody"></strong>
+</div>
+
+<div class="modal-spec">
+<small>Condition</small>
+<strong id="mCondition"></strong>
+</div>
+
+</div>
+
+<a
+id="modalWhatsApp"
+target="_blank"
+class="btn btn-red">
+💬 Enquire On WhatsApp
+</a>
+
+<a
+href="tel:+254704020005"
+class="btn btn-dark">
+📞 Call Dealer
+</a>
+
+</div>
+</div>
+</div>
+
+
+<script>
+
+/* ================= VEHICLE DATABASE ================= */
+
+const vehicles = [
+
+{
+id:1,
+year:2024,
+make:"Toyota",
+model:"Land Cruiser Prado",
+trim:"TX-L 2.8 Diesel",
+price:8500000,
+mileage:"18,000 km",
+transmission:"Automatic",
+fuel:"Diesel",
+body:"SUV",
+condition:"NEW",
+image:"https://images.unsplash.com/photo-1630826362226-a509049bcdbf?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8dG95b3RhJTIwcHJhZG8lMjAyMDIyfGVufDB8fDB8fHw",
+description:"Luxury Toyota Land Cruiser Prado with premium features and exceptional performance."
+},
+
+{
+id:2,
+year:2023,
+make:"Toyota",
+model:"Harrier",
+trim:"Hybrid Z Leather",
+price:5450000,
+mileage:"32,000 km",
+transmission:"Automatic",
+fuel:"Hybrid",
+body:"SUV",
+condition:"NEW",
+image:"https://carsguide.ikman.lk/wp-content/uploads/2024/06/harrier-featured.jpg",
+description:"Luxury Toyota Harrier Hybrid with excellent fuel economy and premium interior."
+},
+
+{
+id:3,
+year:2022,
+make:"Toyota",
+model:"RAV4",
+trim:"Adventure AWD",
+price:4350000,
+mileage:"41,500 km",
+transmission:"Automatic",
+fuel:"Petrol",
+body:"SUV",
+condition:"NEW",
+image:"https://images.carexpert.com.au/app/uploads/2022/05/2022-Toyota-RAV4-Cruiser-2WD-Hybrid-HERO.jpg",
+description:"Reliable Toyota RAV4 Adventure with all-wheel drive and excellent ground clearance."
+},
+
+{
+id:4,
+year:2023,
+make:"Mercedes-Benz",
+model:"C200",
+trim:"Avantgarde",
+price:5850000,
+mileage:"29,000 km",
+transmission:"Automatic",
+fuel:"Petrol",
+body:"Sedan",
+condition:"NEW",
+image:"https://www.jmrsales.com.au/wp-content/uploads/2023/06/IMG_1012_%E5%89%AF%E6%9C%AC-scaled.jpg",
+description:"Elegant Mercedes-Benz C200 with premium comfort, technology and excellent performance."
+},
+
+{
+id:5,
+year:2024,
+make:"Toyota",
+model:"Hilux",
+trim:"Double Cab 2.8 GD-6",
+price:6250000,
+mileage:"12,000 km",
+transmission:"Automatic",
+fuel:"Diesel",
+body:"Pickup",
+condition:"USED",
+image:"https://images.carexpert.com.au/resize/3000/-/app/uploads/2024/02/240122_Toyota-Hilux-SR5_Still-4.jpg",
+description:"Powerful Toyota Hilux Double Cab suitable for business, work and adventure."
+},
+
+{
+id:6,
+year:2022,
+make:"Mazda",
+model:"CX-5",
+trim:"XD L Package",
+price:3250000,
+mileage:"58,000 km",
+transmission:"Automatic",
+fuel:"Diesel",
+body:"SUV",
+condition:"NEW",
+image:"https://images.squarespace-cdn.com/content/v1/5cafdb14fb22a5285e179bdb/1660000314238-HWGO2CZOWKP25ZYMIQNE/2022+Mazda+CX-5-1.jpg",
+description:"Stylish and comfortable Mazda CX-5 with efficient diesel engine."
+},
+
+{
+id:7,
+year:2022,
+make:"Honda",
+model:"Fit",
+trim:"Hybrid",
+price:1850000,
+mileage:"45,000 km",
+transmission:"Automatic",
+fuel:"Hybrid",
+body:"Hatchback",
+condition:"USED",
+image:"https://www.carguru.sg/cdn/shop/files/HONDA-FIT-1.5-E-HEV-BASIC-CVT-13-Jul-22-98M-0TF-141800-44755-GREY-9KM-LOAN-1421-Singapore-Used-Car-For-Sale-03_1024x1024.jpg?v=1714290325",
+description:"Economical Honda Fit Hybrid, ideal for city driving and daily commuting."
+},
+
+{
+id:8,
+year:2024,
+make:"Ford",
+model:"Ranger",
+trim:"Wildtrak",
+price:6850000,
+mileage:"8,500 km",
+transmission:"Automatic",
+fuel:"Diesel",
+body:"Pickup",
+condition:"SLIGHTLY USED",
+image:"https://images.carexpert.com.au/resize/3000/-/app/uploads/2024/08/2024-Ford-Ranger-Tremor-96.jpg",
+description:"Premium Ford Ranger Wildtrak with powerful performance and modern technology."
+},
+
+{
+id:9,
+year:2023,
+make:"Nissan",
+model:"X-Trail",
+trim:"4WD",
+price:3950000,
+mileage:"29,000 km",
+transmission:"Automatic",
+fuel:"Petrol",
+body:"SUV",
+condition:"NEW",
+image:"https://images.carexpert.com.au/resize/3000/-/app/uploads/2022/12/221212_Nissan-X-Trail-ST-L-2WD_Still-24.jpg",
+description:"Spacious Nissan X-Trail with four-wheel drive and family-friendly features."
+},
+
+{
+id:10,
+year:2019,
+make:"Subaru",
+model:"Forester",
+trim:"XT Touring",
+price:3600000,
+mileage:"52,000 km",
+transmission:"Automatic",
+fuel:"Petrol",
+body:"SUV",
+condition:"NEW",
+image:"https://i.ytimg.com/vi/H7da24O2ttA/maxresdefault.jpg",
+description:"Comfortable Subaru Forester with excellent handling and all-wheel-drive capability."
+}
+
+];
+
+
+/* ================= DISPLAY ================= */
+
+function money(value){
+
+return "KSh " + value.toLocaleString("en-KE");
+
+}
+
+
+function displayCars(list){
+
+const container=document.getElementById("cars");
+
+container.innerHTML="";
+
+document.getElementById("count").textContent=
+`${list.length} Vehicle${list.length!==1?"s":""} Found`;
+
+if(list.length===0){
+
+container.innerHTML=`
+<div style="grid-column:1/-1;text-align:center;padding:60px">
+<h2>No Vehicles Found</h2>
+<p style="color:#697386;margin-top:10px">
+Try different search options.
+</p>
+</div>
+`;
+
+return;
+
+}
+
+list.forEach(car=>{
+
+container.innerHTML+=`
+
+<article class="car">
+
+<div class="car-image">
+
+<img
+src="${car.image}"
+alt="${car.year} ${car.make} ${car.model}"
+loading="lazy">
+
+<span class="badge">${car.condition}</span>
+
+</div>
+
+<div class="car-content">
+
+<h3>${car.year} ${car.make} ${car.model}</h3>
+
+<div class="trim">${car.trim}</div>
+
+<div class="price">${money(car.price)}</div>
+
+<div class="specs">
+
+<span>📅 ${car.year}</span>
+<span>🛣️ ${car.mileage}</span>
+<span>⚙️ ${car.transmission}</span>
+<span>⛽ ${car.fuel}</span>
+<span>🚗 ${car.body}</span>
+<span>✓ ${car.condition}</span>
+
+</div>
+
+<div class="car-buttons">
+
+<button
+class="btn btn-red"
+onclick="viewCar(${car.id})">
+View Details
+</button>
+
+<a
+class="btn"
+style="background:#25d366;color:white;text-align:center"
+target="_blank"
+href="https://wa.me/254704020005?text=${encodeURIComponent(
+`Hello PrimeDrive Motors. I am interested in the ${car.year} ${car.make} ${car.model} ${car.trim}, priced at ${money(car.price)}. Is it available?`
+)}">
+WhatsApp
+</a>
+
+</div>
+
+</div>
+
+</article>
+
+`;
+
+});
+
+}
+
+
+/* ================= SEARCH ================= */
+
+function searchCars(){
+
+const condition=
+document.getElementById("condition").value.toLowerCase();
+
+const make=
+document.getElementById("make").value.toLowerCase();
+
+const maxPrice=
+Number(document.getElementById("price").value)||Infinity;
+
+const body=
+document.getElementById("body").value.toLowerCase();
+
+const results=vehicles.filter(car=>{
+
+return (
+
+(!condition ||
+car.condition.toLowerCase()===condition)
+
+&&
+
+(!make ||
+car.make.toLowerCase().includes(make))
+
+&&
+
+car.price<=maxPrice
+
+&&
+
+(!body ||
+car.body.toLowerCase()===body)
+
+);
+
+});
+
+displayCars(results);
+
+document
+.getElementById("inventory")
+.scrollIntoView({behavior:"smooth"});
+
+}
+
+
+/* ================= SORT ================= */
+
+function sortCars(){
+
+const type=
+document.getElementById("sort").value;
+
+let list=[...vehicles];
+
+if(type==="low")
+list.sort((a,b)=>a.price-b.price);
+
+if(type==="high")
+list.sort((a,b)=>b.price-a.price);
+
+if(type==="year")
+list.sort((a,b)=>b.year-a.year);
+
+displayCars(list);
+
+}
+
+
+/* ================= VEHICLE DETAILS ================= */
+
+function viewCar(id){
+
+const car=vehicles.find(v=>v.id===id);
+
+if(!car)return;
+
+document.getElementById("modalImage").src=car.image;
+
+document.getElementById("modalTitle").textContent=
+`${car.year} ${car.make} ${car.model} ${car.trim}`;
+
+document.getElementById("modalPrice").textContent=
+money(car.price);
+
+document.getElementById("modalDescription").textContent=
+car.description;
+
+document.getElementById("mYear").textContent=car.year;
+
+document.getElementById("mMileage").textContent=car.mileage;
+
+document.getElementById("mTransmission").textContent=car.transmission;
+
+document.getElementById("mFuel").textContent=car.fuel;
+
+document.getElementById("mBody").textContent=car.body;
+
+document.getElementById("mCondition").textContent=car.condition;
+
+document.getElementById("modalWhatsApp").href=
+`https://wa.me/254704020005?text=${encodeURIComponent(
+`Hello PrimeDrive Motors. I want to enquire about the ${car.year} ${car.make} ${car.model} ${car.trim}, priced at ${money(car.price)}.`
+)}`;
+
+document.getElementById("modal").classList.add("show");
+
+document.body.style.overflow="hidden";
+
+}
+
+
+function closeModal(){
+
+document.getElementById("modal").classList.remove("show");
+
+document.body.style.overflow="";
+
+}
+
+
+document.getElementById("modal").addEventListener("click",function(e){
+
+if(e.target===this){
+closeModal();
+}
+
+});
+
+
+/* ================= MOBILE MENU ================= */
+
+function toggleMenu(){
+
+document
+.getElementById("navLinks")
+.classList.toggle("show");
+
+}
+
+
+/* ================= FINANCE ================= */
+
+function calculatePayment(){
+
+const price=
+Number(document.getElementById("vehiclePrice").value)||0;
+
+const down=
+Number(document.getElementById("downPayment").value)||0;
+
+const annual=
+Number(document.getElementById("interest").value)||0;
+
+const months=
+Number(document.getElementById("term").value);
+
+const principal=Math.max(price-down,0);
+
+const monthlyRate=annual/100/12;
+
+let payment;
+
+if(monthlyRate===0){
+
+payment=principal/months;
+
+}else{
+
+payment=
+principal*
+(
+monthlyRate*
+Math.pow(1+monthlyRate,months)
+)/
+(
+Math.pow(1+monthlyRate,months)-1
+);
+
+}
+
+document.getElementById("payment").textContent=
+money(Math.round(payment));
+
+}
+
+
+/* ================= CONTACT TO WHATSAPP ================= */
+
+function sendWhatsApp(event){
+
+event.preventDefault();
+
+const name=document.getElementById("name").value;
+
+const phone=document.getElementById("phone").value;
+
+const email=document.getElementById("email").value;
+
+const vehicle=document.getElementById("vehicle").value;
+
+const message=document.getElementById("message").value;
+
+const text=
+`CAR ENQUIRY - PRIME DRIVE MOTORS
+
+Name: ${name}
+Phone: ${phone}
+Email: ${email}
+Vehicle: ${vehicle}
+
+Message:
+${message}`;
+
+window.open(
+`https://wa.me/254704020005?text=${encodeURIComponent(text)}`,
+"_blank"
+);
+
+}
+
+
+/* ================= INITIALIZE ================= */
+
+displayCars(vehicles);
+
+calculatePayment();
+
+</script>
+
+</body>
+</html>
